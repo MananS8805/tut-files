@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div > p for direct child  */
+        /* div + p div is before sibling of p */
+        div p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        }
+
+        li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>this is a paragraph</p>
+            <ul>
+                <li>
+                    <p>this is inside LI</p>
+                </li>
+            </ul>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer paragraph</p>
+</body>
+</html>

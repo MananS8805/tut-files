@@ -1,0 +1,72 @@
+<!-- flexbox is flexbible and box -->
+<!-- diplay should flex -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box tutorial</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the contaner as flex box */
+            display: flex;
+            /* Flex direction default is row */
+            flex-direction: row ;
+
+            flex-wrap: wrap-reverse;
+                /* both is one run */
+
+                /* default is no wrap */
+            flex-flow: row-reverse wrap;
+            justify-content: center;
+/* justfy content horziontal
+align items for vertical */
+            align-items: center;
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+        flex-grow: 2;
+
+            /* order gives positon higher the order later it shows up */
+        }
+        #item-2{
+            flex-grow: 3;
+        }
+        #item-3{
+            order: 40;
+            flex-shrink: 3;
+            flex-basis: 320px;
+            /* when flex directon is set to row flex basis will control widh  */
+            /* when flex directon is set to column flex basis will control height  */
+
+            align-self: flex-start;
+        }
+
+
+        /* properties for flex container  */
+
+    </style>
+</head>
+<body>
+    <h1>This is flex box tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second BOx</div>
+        <div class="item" id="item-3">Third</div>
+        <!-- <div class="item" id="item-4">Fourth</div>
+        <div class="item" id="item-5">Fifth</div>
+        <div class="item" id="item-6">Sixth</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(226 43 203 / 53%);
+        }
+        .container{
+            background-color: pink;
+            border: 3px solid rgb(244, 122, 122);
+            /* padding: 69px;
+            margin: 34px;
+             */
+
+
+             /* we can set padding and margin on all four sides
+             padding-top: 50px;
+             padding-bottom: 30px;
+             padding-left: 30px; */
+
+
+             /* padding: 23px 23px 30px 30px; padding top right bottom left */
+             /* padding: y(top/bottom) x(left/right); */
+             padding: 107px 30px;
+
+             margin: 34px;
+             width: 233px;
+             border-radius: 23px;
+             box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia accusantium quos mollitia voluptas eligendi eveniet nobis nisi ipsam optio, expedita quod! Quasi molestiae eos cum deserunt quo quisquam mollitia nulla.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia accusantium quos mollitia voluptas eligendi eveniet nobis nisi ipsam optio, expedita quod! Quasi molestiae eos cum deserunt quo quisquam mollitia nulla.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia accusantium quos mollitia voluptas eligendi eveniet nobis nisi ipsam optio, expedita quod! Quasi molestiae eos cum deserunt quo quisquam mollitia nulla.</p>
+    </div>
+</body>
+</html>

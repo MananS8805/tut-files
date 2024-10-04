@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title> 
+    <style>
+        
+        *{
+box-sizing: border-box;
+        }
+        body{
+            font-family: "Akaya Telivigala", system-ui;
+            line-height: 1.2em;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid green;
+            margin: 33px auto; 
+            background-color: burlywood;              
+        }
+        .item{
+                border: 2px solid blue;
+                margin: 12px 3px;
+                padding: 12px 3px;
+                background: rgb(209, 139, 139);
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+
+        #comp{
+            float: right;
+            width: 48%;
+
+        }
+        #stationery{
+            clear: both;
+            width: 100%;
+        }
+        p,h3{
+            text-align: right;
+            text-align: left;
+            text-align: justify;
+        }
+
+
+    </style>
+</head>
+<body>
+ <div class="container">
+    <h1>Welcome to store</h1>
+    <div id="fruit" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, ab. Saepe odio nobis aliquid autem, debitis facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, neque illum facere est adipisci maiores reiciendis accusamus consequuntur consectetur voluptas, unde suscipit dicta voluptates dolor enim praesentium labore sunt natus! Perspiciatis suscipit beatae sequi. soluta, tempore adipisci explicabo cum quod blanditiis quos voluptate facere consectetur. Rerum, cupiditate?</p>
+    </div>
+    <div id="comp" class="item">
+        <h3>Computer</h3>
+        <p id="computerspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, ab. Saepe odio nobis aliquid autem, debitis facilis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta dolor vitae maxime tempore laboriosam officiis delectus dolorum. Beatae cum quibusdam sunt temporibus aspernatur, nesciunt dolorem magni neque autem at a laudantium fugit totam ducimus. soluta, tempore adipisci explicabo cum quod blanditiis quos voluptate facere consectetur. Rerum, cupiditate?</p>
+    </div>
+    <div id="stationery" class="item">
+        <h3>Stationery</h3>
+        <p id="stationerypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, ab. Saepe odio nobis aliquid autem, debitis facilis soluta, tempore adipisci explicabo cum quod blanditiis quos voluptate facere consectetur. Rerum, cupiditate?</p>
+    </div>
+    <div id="glasses" class="item">
+        <h3>Stationery</h3>
+        <p id="glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, ab. Saepe odio nobis aliquid autem, debitis facilis soluta, tempore adipisci explicabo cum quod blanditiis quos voluptate facere consectetur. Rerum, cupiditate?</p>
+    </div>
+ </div>   
+</body>
+</html>
